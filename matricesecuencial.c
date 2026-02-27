@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <windows.h>   // for GetProcessTimes
+#include <stdint.h>   // for uint64_t
 
 // Función para crear una matriz dinámica nxn
 int** crearMatriz(int n) {
@@ -11,31 +13,21 @@ int** crearMatriz(int n) {
     return matriz;
 }
 
+// Llenar matriz con números aleatorios
+void llenarMatriz(int** matriz, int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            matriz[i][j] = rand() % 101; 
+        }
+    }
+}
+
 // Función para liberar memoria
 void liberarMatriz(int** matriz, int n) {
     for (int i = 0; i < n; i++) {
         free(matriz[i]);
     }
     free(matriz);
-}
-
-// Llenar matriz con números aleatorios
-void llenarMatriz(int** matriz, int n) {
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            matriz[i][j] = rand() % 10; // Números entre 0 y 9
-        }
-    }
-}
-
-// Imprimir matriz
-void imprimirMatriz(int** matriz, int n) {
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            printf("%4d", matriz[i][j]);
-        }
-        printf("\n");
-    }
 }
 
 // Multiplicación de matrices
@@ -50,11 +42,17 @@ void multiplicarMatrices(int** A, int** B, int** C, int n) {
     }
 }
 
-int main() {
-    int n;
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        printf("Uso: %s <tamano de matriz>\n", argv[0]);
+        return 1;
+    }
 
-    printf("Ingrese el tamano de las matrices cuadradas: ");
-    scanf("%d", &n);
+    int n = atoi(argv[1]);
+    if (n <= 0) {
+        printf("El tamano de la matriz debe ser un numero positivo.\n");
+        return 1;
+    }
 
     // Inicializar semilla para números aleatorios
     srand(time(NULL));
@@ -68,11 +66,19 @@ int main() {
     llenarMatriz(A, n);
     llenarMatriz(B, n);
 
-    // Medir tiempo de CPU solo para la multiplicación
-    clock_t start = clock();
+    // Medir tiempo de CPU mediante GetProcessTimes (usuario + kernel)
+    FILETIME ftCreation, ftExit, ftKernel, ftUser;
+    GetProcessTimes(GetCurrentProcess(), &ftCreation, &ftExit, &ftKernel, &ftUser);
+    uint64_t start = ((uint64_t)ftKernel.dwHighDateTime << 32 | ftKernel.dwLowDateTime) +
+                     ((uint64_t)ftUser.dwHighDateTime << 32 | ftUser.dwLowDateTime);
+
     multiplicarMatrices(A, B, C, n);
-    clock_t end = clock();
-    double cpu_time = (double)(end - start) / CLOCKS_PER_SEC;
+
+    GetProcessTimes(GetCurrentProcess(), &ftCreation, &ftExit, &ftKernel, &ftUser);
+    uint64_t end = ((uint64_t)ftKernel.dwHighDateTime << 32 | ftKernel.dwLowDateTime) +
+                   ((uint64_t)ftUser.dwHighDateTime << 32 | ftUser.dwLowDateTime);
+
+    double cpu_time = (end - start) * 1e-7; // FILETIME units are 100 ns
 
     // Liberar memoria
     liberarMatriz(A, n);
