@@ -28,13 +28,14 @@ void liberarMatriz(int** matriz, int n) {
     free(matriz);
 }
 
-// Multiplicación de matrices
+// Multiplicación de matrices optimizada (fila x fila)
+// Asume que B ya está traspuesta virtualmente (acceso por B[j][k])
 void multiplicarMatrices(int** A, int** B, int** C, int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             C[i][j] = 0;
             for (int k = 0; k < n; k++) {
-                C[i][j] += A[i][k] * B[k][j];
+                C[i][j] += A[i][k] * B[j][k];
             }
         }
     }
@@ -57,14 +58,14 @@ int main(int argc, char* argv[]) {
 
     // Crear matrices
     int** A = crearMatriz(n);
-    int** B = crearMatriz(n);
+    int** B = crearMatriz(n);  // B se asume ya traspuesta
     int** C = crearMatriz(n);
 
     // Llenar matrices A y B
     llenarMatriz(A, n);
     llenarMatriz(B, n);
 
-    // Medir tiempo de CPU (usuario + kernel)
+    // Medir tiempo de CPU 
     struct timespec start_cpu, end_cpu;
     clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start_cpu);
 
