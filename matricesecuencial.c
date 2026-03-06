@@ -64,25 +64,24 @@ int main(int argc, char* argv[]) {
     llenarMatriz(A, n);
     llenarMatriz(B, n);
 
-    // Medir tiempo de CPU (usuario + kernel)
-    struct timespec start_cpu, end_cpu;
-    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start_cpu);
+    // Medir tiempo de wall clock
+    struct timespec start_wall, end_wall;
+    clock_gettime(CLOCK_MONOTONIC, &start_wall);
 
     multiplicarMatrices(A, B, C, n);
 
-    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_cpu);
-    
-    // Calcular tiempo de CPU en segundos
-    double cpu_time = (end_cpu.tv_sec - start_cpu.tv_sec) + 
-                      (end_cpu.tv_nsec - start_cpu.tv_nsec) / 1e9;
+    clock_gettime(CLOCK_MONOTONIC, &end_wall);
+    // Calcular tiempo de wall clock en segundos
+    double wall_time = (end_wall.tv_sec - start_wall.tv_sec) + 
+                      (end_wall.tv_nsec - start_wall.tv_nsec) / 1e9;
 
     // Liberar memoria
     liberarMatriz(A, n);
     liberarMatriz(B, n);
     liberarMatriz(C, n);
 
-    // Salida: tiempo de CPU en segundos
-    printf("%.6f\n", cpu_time);
+    // Salida: tiempo de wall clock en segundos
+    printf("%.6f\n", wall_time);
 
     return 0;
 }
