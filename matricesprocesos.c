@@ -39,10 +39,7 @@
  *
  *    Para que los procesos compartan la misma memoria (y puedan escribir
  *    resultados que el padre pueda leer), usamos mmap() con MAP_SHARED.
- *
- *    Analogía: Es como tener una pizarra común donde todos escriben,
- *    en lugar de que cada uno tenga su propio cuaderno.
- *
+ 
  * 4. SEMÁFORO (exclusión mutua)
  *    ---------------------------
  *    Cuando varios procesos pueden escribir en la misma memoria al mismo
@@ -52,12 +49,7 @@
  *
  *    sem_wait() → ROJO:  "espera tu turno, otro proceso está escribiendo"
  *    sem_post() → VERDE: "ya terminé, el siguiente puede pasar"
- *
- * 5. REGIÓN CRÍTICA
- *    ---------------
- *    Es el bloque de código donde se accede a datos compartidos.
- *    Solo un proceso puede ejecutarlo a la vez (protegido por el semáforo).
- *
+ * 
  * =============================================================================
  * ESTRUCTURA DE LA MEMORIA COMPARTIDA
  * =============================================================================
@@ -177,11 +169,7 @@ void trabajoProceso(SharedMemory* shm, int start_row, int end_row, int proc_id) 
 
     for (int i = start_row; i < end_row; i++) {
         for (int j = 0; j < n; j++) {
-
-            /* Calcular el valor de C[i][j]
-             * Usamos long long para evitar desbordamiento en matrices grandes
-             * (100 * 100 * n puede superar el límite de int para n > 214748) */
-            long long sum = 0;
+            int sum = 0;
             for (int k = 0; k < n; k++) {
                 sum += A(shm, i, k) * B(shm, k, j);
             }
