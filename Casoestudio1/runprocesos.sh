@@ -24,11 +24,11 @@ for ((j=1; j<=10; j++)); do
     done
 done
 
-# Pruebas con 16 procesos
-echo "Ejecutando pruebas con 16 procesos..."
+# Pruebas con 12 procesos
+echo "Ejecutando pruebas con 12 procesos..."
 for ((j=1; j<=10; j++)); do
     for i in 800 1000 2000 4000 6000 8000; do
-        ./matricesprocesos "$i" 16 >> timeprocesos16.doc
+        ./matricesprocesos "$i" 12 >> timeprocesos12.doc
     done
 done
 
