@@ -1,0 +1,160 @@
+ [TIEMPO]  Wall clock time      : 2.250465475 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 150.779383097 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 367.303849402 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1373.054499087 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.102518300 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 149.785752701 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 355.303064888 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1338.133773948 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.208593453 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 150.396486938 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 350.410416249 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1340.235696385 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.129444264 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 149.629850361 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 352.225269363 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1386.417320006 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.098159704 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 149.205645354 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 353.386264411 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1338.589535292 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.107125601 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 149.884439824 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 352.929932414 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1363.633380856 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.126682030 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 149.610108642 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 353.644630108 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1372.670982321 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.136705729 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 149.203032590 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 354.072476748 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1340.550856633 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.139498417 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 148.129133023 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 351.727117743 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1355.695021096 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01
+ [TIEMPO]  Wall clock time      : 2.092589603 s
+ [VERIF 1] Iteraciones          : 49521
+ [VERIF 2] Residuo RMS final    : 9.9967289042e-07
+ [VERIF 3] Error RMS vs exacta  : 9.6604346913e-06
+ [TIEMPO]  Wall clock time      : 147.591843606 s
+ [VERIF 1] Iteraciones          : 3170330
+ [VERIF 2] Residuo RMS final    : 9.9999163551e-07
+ [VERIF 3] Error RMS vs exacta  : 2.5081685094e-07
+ [TIEMPO]  Wall clock time      : 352.281704436 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 2.1545891557e+00
+ [VERIF 3] Error RMS vs exacta  : 2.1222858728e-01
+ [TIEMPO]  Wall clock time      : 1326.910942321 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.3731160170e+00
+ [VERIF 3] Error RMS vs exacta  : 3.0983768479e-01

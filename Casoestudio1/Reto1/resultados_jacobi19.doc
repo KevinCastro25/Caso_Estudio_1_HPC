@@ -1,0 +1,4 @@
+ [TIEMPO]  Wall clock time      : 15243.080823131 s
+ [VERIF 1] Iteraciones          : 5000000
+ [VERIF 2] Residuo RMS final    : 4.7646857772e+00
+ [VERIF 3] Error RMS vs exacta  : 3.1183951632e-01
